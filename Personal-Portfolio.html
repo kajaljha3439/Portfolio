@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kajal Jha | Web Developer</title>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --surface: #111827;
+      --card: #1f2933;
+      --text-primary: #f9fafb;
+      --text-secondary: #9ca3af;
+      --accent: #38bdf8;
+      --radius: 14px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #020617, var(--bg));
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #38bdf8, #6366f1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin: 0 auto 1.5rem;
+      color: #020617;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    section h2::after {
+      content: "";
+      width: 40px;
+      height: 3px;
+      background: var(--accent);
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      border-radius: 4px;
+    }
+
+    /* About */
+    .about p {
+      max-width: 720px;
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+    }
+
+    /* Education */
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .edu-card {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+
+    .edu-card h3 {
+      margin-bottom: 0.3rem;
+      font-size: 1.1rem;
+    }
+
+    .edu-card p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    /* Skills */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .skill {
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      background: rgba(56,189,248,0.15);
+      color: #e0f2fe;
+      font-size: 0.9rem;
+    }
+
+    /* Projects */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.75rem;
+    }
+
+    .project-card {
+      background: var(--card);
+      padding: 1.6rem;
+      border-radius: var(--radius);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .project-card h3 {
+      font-size: 1.15rem;
+    }
+
+    .project-card p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    .tech {
+      font-size: 0.85rem;
+      color: var(--accent);
+    }
+
+    /* Contact */
+    .contact {
+      background: var(--surface);
+      padding: 2.5rem;
+      border-radius: var(--radius);
+    }
+
+    .contact p {
+      margin-bottom: 0.6rem;
+      color: var(--text-secondary);
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 3rem 1.25rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <div class="avatar">KJ</div>
+      <h1>Kajal Jha</h1>
+      <p>Web Developer</p>
+    </header>
+
+    <section class="about">
+      <h2>About</h2>
+      <p>
+        I am a detail-oriented web developer with a strong focus on creating
+        clean, responsive, and user-friendly interfaces. I enjoy transforming
+        ideas into elegant digital experiences using modern web standards and
+        best practices.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="education-grid">
+        <div class="edu-card">
+          <h3>Bachelor of Technology in Computer Science</h3>
+          <p>XYZ University</p>
+          <p>2021 – 2025</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">React</span>
+        <span class="skill">Git</span>
+        <span class="skill">Responsive Design</span>
+        <span class="skill">UI/UX Fundamentals</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Personal Portfolio</h3>
+          <p>
+            A modern, responsive personal portfolio website designed with a
+            minimal aesthetic and strong focus on usability.
+          </p>
+          <span class="tech">HTML • CSS</span>
+        </div>
+
+        <div class="project-card">
+          <h3>Task Management UI</h3>
+          <p>
+            A clean front-end interface for managing daily tasks with a focus
+            on clarity and user flow.
+          </p>
+          <span class="tech">HTML • CSS • JavaScript</span>
+        </div>
+
+        <div class="project-card">
+          <h3>Landing Page Design</h3>
+          <p>
+            A conversion-focused landing page built with modern layout
+            techniques and responsive design principles.
+          </p>
+          <span class="tech">HTML • CSS</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="contact">
+        <p>Email: <a href="mailto:kajal.jha.dev@gmail.com">kajal.jha.dev@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/kajal-jha" target="_blank">linkedin.com/in/kajal-jha</a></p>
+        <p>GitHub: <a href="https://github.com/kajaljha" target="_blank">github.com/kajaljha</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Kajal Jha. All rights reserved.
+  </footer>
+</body>
+</html>
